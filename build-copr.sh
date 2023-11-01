@@ -2,7 +2,7 @@
 
 CLONE_URL=https://git.sr.ht/~sgob/copr-iosevka
 COMMITTISH=main
-TIMEOUT=58000
+TIMEOUT=43200
 COPR_REPO=sgob/iosevka
 
 # all iosevka variants
