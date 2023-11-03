@@ -20,6 +20,15 @@ BuildRequires:  ttfautohint
 Iosevka is an open-source, sans-serif + slab-serif, monospace + quasi‑proportional typeface family, designed for writing code, using in terminals, and preparing technical documents.
 
 
+%package -n iosevka-curly-slab
+
+
+%package -n iosevka-term-curly-slab
+
+
+%package -n iosevka-fixed-curly-slab
+
+
 %prep
 %autosetup -n %{source_name}-%{version}
 
