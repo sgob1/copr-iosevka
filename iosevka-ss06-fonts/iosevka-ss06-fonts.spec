@@ -21,12 +21,21 @@ Iosevka is an open-source, sans-serif + slab-serif, monospace + quasi‑proporti
 
 
 %package -n iosevka-ss06-fonts
+Summary:        Slender typeface for code, from code (Monospace, Liberation Mono Style).
+%description -n iosevka-ss06-fonts
+Iosevka is an open-source, sans-serif + slab-serif, monospace + quasi‑proportional typeface family, designed for writing code, using in terminals, and preparing technical documents.
 
 
 %package -n iosevka-term-ss06-fonts
+Summary:        Slender typeface for code, from code (Monospace, Liberation Mono Style).
+%description -n iosevka-term-ss06-fonts
+Iosevka is an open-source, sans-serif + slab-serif, monospace + quasi‑proportional typeface family, designed for writing code, using in terminals, and preparing technical documents.
 
 
 %package -n iosevka-fixed-ss06-fonts
+Summary:        Slender typeface for code, from code (Monospace, Liberation Mono Style).
+%description -n iosevka-fixed-ss06-fonts
+Iosevka is an open-source, sans-serif + slab-serif, monospace + quasi‑proportional typeface family, designed for writing code, using in terminals, and preparing technical documents.
 
 
 %prep
