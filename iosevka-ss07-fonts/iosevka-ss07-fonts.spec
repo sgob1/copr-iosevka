@@ -3,7 +3,7 @@
 
 Name:           iosevka-ss07
 Version:        27.3.3
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        Slender typeface for code, from code (Monospace, Monaco Style).
 
 License:        SIL Open Font License Version 1.1
@@ -64,6 +64,8 @@ npm run build -- ttf::iosevka-fixed-ss07
 
 
 %changelog
+* Fri Nov 03 2023 Marco Sgobino <marco.sgobino@gmail.com> - 27.3.3
+- Fixed files specification
 * Fri Nov 03 2023 Marco Sgobino <marco.sgobino@gmail.com> - 27.3.3
 - Fixed description
 * Wed Nov 01 2023 Marco Sgobino <marco.sgobino@gmail.com> - 27.3.3
