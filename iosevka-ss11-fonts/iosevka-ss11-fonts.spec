@@ -17,25 +17,33 @@ BuildRequires:  ttfautohint
 
 
 %description
-Iosevka is an open-source, sans-serif + slab-serif, monospace + quasi‑proportional typeface family, designed for writing code, using in terminals, and preparing technical documents.
+Iosevka is an open-source, sans-serif + slab-serif, monospace +
+quasi‑proportional typeface family, designed for writing code, using in
+terminals, and preparing technical documents.
 
 
 %package -n iosevka-ss11-fonts
 Summary:        Slender typeface for code, from code (Monospace, X Windows Fixed Style).
 %description -n iosevka-ss11-fonts
-Iosevka is an open-source, sans-serif + slab-serif, monospace + quasi‑proportional typeface family, designed for writing code, using in terminals, and preparing technical documents.
+Iosevka is an open-source, sans-serif + slab-serif, monospace +
+quasi‑proportional typeface family, designed for writing code, using in
+terminals, and preparing technical documents.
 
 
 %package -n iosevka-term-ss11-fonts
 Summary:        Slender typeface for code, from code (Monospace, X Windows Fixed Style).
 %description -n iosevka-term-ss11-fonts
-Iosevka is an open-source, sans-serif + slab-serif, monospace + quasi‑proportional typeface family, designed for writing code, using in terminals, and preparing technical documents.
+Iosevka is an open-source, sans-serif + slab-serif, monospace +
+quasi‑proportional typeface family, designed for writing code, using in
+terminals, and preparing technical documents.
 
 
 %package -n iosevka-fixed-ss11-fonts
 Summary:        Slender typeface for code, from code (Monospace, X Windows Fixed Style).
 %description -n iosevka-fixed-ss11-fonts
-Iosevka is an open-source, sans-serif + slab-serif, monospace + quasi‑proportional typeface family, designed for writing code, using in terminals, and preparing technical documents.
+Iosevka is an open-source, sans-serif + slab-serif, monospace +
+quasi‑proportional typeface family, designed for writing code, using in
+terminals, and preparing technical documents.
 
 
 %prep

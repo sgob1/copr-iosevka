@@ -17,25 +17,33 @@ BuildRequires:  ttfautohint
 
 
 %description
-Iosevka is an open-source, sans-serif + slab-serif, monospace + quasi‑proportional typeface family, designed for writing code, using in terminals, and preparing technical documents.
+Iosevka is an open-source, sans-serif + slab-serif, monospace +
+quasi‑proportional typeface family, designed for writing code, using in
+terminals, and preparing technical documents.
 
 
 %package -n iosevka-ss03-fonts
 Summary:        Slender typeface for code, from code (Monospace, Consolas Style).
 %description -n iosevka-ss03-fonts
-Iosevka is an open-source, sans-serif + slab-serif, monospace + quasi‑proportional typeface family, designed for writing code, using in terminals, and preparing technical documents.
+Iosevka is an open-source, sans-serif + slab-serif, monospace +
+quasi‑proportional typeface family, designed for writing code, using in
+terminals, and preparing technical documents.
 
 
 %package -n iosevka-term-ss03-fonts
 Summary:        Slender typeface for code, from code (Monospace, Consolas Style).
 %description -n iosevka-term-ss03-fonts
-Iosevka is an open-source, sans-serif + slab-serif, monospace + quasi‑proportional typeface family, designed for writing code, using in terminals, and preparing technical documents.
+Iosevka is an open-source, sans-serif + slab-serif, monospace +
+quasi‑proportional typeface family, designed for writing code, using in
+terminals, and preparing technical documents.
 
 
 %package -n iosevka-fixed-ss03-fonts
 Summary:        Slender typeface for code, from code (Monospace, Consolas Style).
 %description -n iosevka-fixed-ss03-fonts
-Iosevka is an open-source, sans-serif + slab-serif, monospace + quasi‑proportional typeface family, designed for writing code, using in terminals, and preparing technical documents.
+Iosevka is an open-source, sans-serif + slab-serif, monospace +
+quasi‑proportional typeface family, designed for writing code, using in
+terminals, and preparing technical documents.
 
 
 %prep
