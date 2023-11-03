@@ -21,6 +21,7 @@ Iosevka is an open-source, sans-serif + slab-serif, monospace + quasi‑proporti
 
 
 %package -n iosevka-aile-fonts
+Summary:        Slender typeface for code, from code (Quasi-proportional, Sans-serif).
 
 
 %prep
