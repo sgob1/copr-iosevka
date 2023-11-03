@@ -65,3 +65,5 @@ npm run build -- ttf::iosevka-fixed-ss15
 %changelog
 * Fri Nov 03 2023 Marco Sgobino <marco.sgobino@gmail.com> - 27.3.3
 - Fixed description
+* Wed Nov 01 2023 Marco Sgobino <marco.sgobino@gmail.com> - 27.3.3
+- First version
