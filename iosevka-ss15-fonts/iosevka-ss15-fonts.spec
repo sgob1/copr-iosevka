@@ -3,8 +3,8 @@
 
 Name:           iosevka-ss15
 Version:        27.3.3
-Release:        1%{?dist}
-Summary:        Slender typeface for code, from code.
+Release:        2%{?dist}
+Summary:        Slender typeface for code, from code (Monospace, IBM Plex Mono Style).
 
 License:        SIL Open Font License Version 1.1
 URL:            https://github.com/be5invis/Iosevka
@@ -15,27 +15,14 @@ BuildArch:      noarch
 BuildRequires:  nodejs-npm
 BuildRequires:  ttfautohint
 
+
 %description
 Iosevka is an open-source, sans-serif + slab-serif, monospace + quasi‑proportional typeface family, designed for writing code, using in terminals, and preparing technical documents.
+
 
 %prep
 %autosetup -n %{source_name}-%{version}
 
-# Iosevka SS15 — Monospace, IBM Plex Mono Style
-%package -n iosevka-ss15-fonts
-Summary:        Monospace, IBM Plex Mono Style
-%description -n iosevka-ss15-fonts
-Iosevka Monospace, IBM Plex Mono Style
-
-%package -n iosevka-term-ss15-fonts
-Summary:        Monospace, IBM Plex Mono Style
-%description -n iosevka-term-ss15-fonts
-Iosevka Monospace, IBM Plex Mono Style
-
-%package -n iosevka-fixed-ss15-fonts
-Summary:        Monospace, IBM Plex Mono Style
-%description -n iosevka-fixed-ss15-fonts
-Iosevka Monospace, IBM Plex Mono Style
 
 %build
 npm install
@@ -44,8 +31,10 @@ npm run build -- ttf::iosevka-ss15
 npm run build -- ttf::iosevka-term-ss15
 npm run build -- ttf::iosevka-fixed-ss15
 
+
 %clean
 %{__rm} -rf %{buildroot}
+
 
 %install
 %{__rm} -rf %{buildroot}
@@ -54,16 +43,19 @@ npm run build -- ttf::iosevka-fixed-ss15
 %{__install} -D -m 0644 %{_builddir}/%{source_name}-%{version}/dist/iosevka-term-ss15/ttf/*.ttf  -t %{buildroot}%{_datadir}/fonts/iosevka-term-ss15-fonts
 %{__install} -D -m 0644 %{_builddir}/%{source_name}-%{version}/dist/iosevka-fixed-ss15/ttf/*.ttf -t %{buildroot}%{_datadir}/fonts/iosevka-fixed-ss15-fonts
 
+
 # Iosevka SS15 — Monospace, IBM Plex Mono Style
 %files -n iosevka-ss15-fonts
 %license LICENSE.md
 %doc README.md
 %{_datadir}/fonts/iosevka-ss15-fonts/*
 
+
 %files -n iosevka-term-ss15-fonts
 %license LICENSE.md
 %doc README.md
 %{_datadir}/fonts/iosevka-term-ss15-fonts/*
+
 
 %files -n iosevka-fixed-ss15-fonts
 %license LICENSE.md
@@ -71,3 +63,5 @@ npm run build -- ttf::iosevka-fixed-ss15
 %{_datadir}/fonts/iosevka-fixed-ss15-fonts/*
 
 %changelog
+* Fri Nov 03 2023 Marco Sgobino <marco.sgobino@gmail.com> - 27.3.3
+- Fixed description
