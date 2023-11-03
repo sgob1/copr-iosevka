@@ -48,19 +48,19 @@ npm run build -- ttf::iosevka-fixed-slab
 %files -n iosevka-slab-fonts
 %license LICENSE.md
 %doc README.md
-%{_datadir}/fonts/iosevka-slab-fonts/*
+%{_datadir}/fonts/iosevka-slab-fonts
 
 
 %files -n iosevka-term-slab-fonts
 %license LICENSE.md
 %doc README.md
-%{_datadir}/fonts/iosevka-term-slab-fonts/*
+%{_datadir}/fonts/iosevka-term-slab-fonts
 
 
 %files -n iosevka-fixed-slab-fonts
 %license LICENSE.md
 %doc README.md
-%{_datadir}/fonts/iosevka-fixed-slab-fonts/*
+%{_datadir}/fonts/iosevka-fixed-slab-fonts
 
 
 %changelog

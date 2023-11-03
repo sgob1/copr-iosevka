@@ -44,7 +44,7 @@ npm run build -- ttf::iosevka-aile
 %files -n iosevka-aile-fonts
 %license LICENSE.md
 %doc README.md
-%{_datadir}/fonts/iosevka-aile-fonts/*
+%{_datadir}/fonts/iosevka-aile-fonts
 
 
 %changelog

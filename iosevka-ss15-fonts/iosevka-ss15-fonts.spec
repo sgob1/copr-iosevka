@@ -48,19 +48,19 @@ npm run build -- ttf::iosevka-fixed-ss15
 %files -n iosevka-ss15-fonts
 %license LICENSE.md
 %doc README.md
-%{_datadir}/fonts/iosevka-ss15-fonts/*
+%{_datadir}/fonts/iosevka-ss15-fonts
 
 
 %files -n iosevka-term-ss15-fonts
 %license LICENSE.md
 %doc README.md
-%{_datadir}/fonts/iosevka-term-ss15-fonts/*
+%{_datadir}/fonts/iosevka-term-ss15-fonts
 
 
 %files -n iosevka-fixed-ss15-fonts
 %license LICENSE.md
 %doc README.md
-%{_datadir}/fonts/iosevka-fixed-ss15-fonts/*
+%{_datadir}/fonts/iosevka-fixed-ss15-fonts
 
 %changelog
 * Fri Nov 03 2023 Marco Sgobino <marco.sgobino@gmail.com> - 27.3.3

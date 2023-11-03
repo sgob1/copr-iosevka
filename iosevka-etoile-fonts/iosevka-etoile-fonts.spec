@@ -44,7 +44,7 @@ npm run build -- ttf::iosevka-etoile
 %files -n iosevka-etoile-fonts
 %license LICENSE.md
 %doc README.md
-%{_datadir}/fonts/iosevka-etoile-fonts/*
+%{_datadir}/fonts/iosevka-etoile-fonts
 
 
 %changelog

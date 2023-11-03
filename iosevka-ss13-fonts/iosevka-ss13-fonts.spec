@@ -48,19 +48,19 @@ npm run build -- ttf::iosevka-fixed-ss13
 %files -n iosevka-ss13-fonts
 %license LICENSE.md
 %doc README.md
-%{_datadir}/fonts/iosevka-ss13-fonts/*
+%{_datadir}/fonts/iosevka-ss13-fonts
 
 
 %files -n iosevka-term-ss13-fonts
 %license LICENSE.md
 %doc README.md
-%{_datadir}/fonts/iosevka-term-ss13-fonts/*
+%{_datadir}/fonts/iosevka-term-ss13-fonts
 
 
 %files -n iosevka-fixed-ss13-fonts
 %license LICENSE.md
 %doc README.md
-%{_datadir}/fonts/iosevka-fixed-ss13-fonts/*
+%{_datadir}/fonts/iosevka-fixed-ss13-fonts
 
 
 %changelog
