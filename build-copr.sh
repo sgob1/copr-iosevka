@@ -44,7 +44,6 @@ for f in ${FONTS[@]}; do
              --subdir $FONT_SUBDIR  \
              --spec $FONT_SPEC      \
              --timeout $TIMEOUT     \
-             --enable-net on        \
              --background           \
              --nowait               \
              $COPR_REPO
