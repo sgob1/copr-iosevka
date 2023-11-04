@@ -2,8 +2,8 @@
 %global         debug_package %{nil}
 
 Name:           iosevka-ss01
-Version:        27.3.3
-Release:        4%{?dist}
+Version:        27.3.4
+Release:        1%{?dist}
 Summary:        Slender typeface for code, from code (Monospace, Andale Mono Style).
 
 License:        SIL Open Font License Version 1.1
@@ -90,6 +90,8 @@ npm run build -- ttf::iosevka-fixed-ss01
 
 
 %changelog
+* Sat Nov 04 14:08:39 CET 2023 Marco Sgobino <marco.sgobino@gmail.com> - v27.3.4-1
+- Version 27.3.4
 * Fri Nov 03 15:52:45 CET 2023 Marco Sgobino <marco.sgobino@gmail.com> - v27.3.3-4
 - Fixed formatting of descriptions
 - Introduced new changelog format
