@@ -3,14 +3,12 @@
 author="Marco Sgobino"
 email="<marco.sgobino@gmail.com>"
 old_version=27.3.3
-new_version=27.3.3
-old_release=3
-new_release=4
+new_version=27.3.4
+old_release=4
+new_release=1
 
 today=$(LANG=C date "+%a %b %d %T %Z %Y")
-content="- Fixed formatting of descriptions"
-content+="\n"
-content+="- Introduced new changelog format"
+content="- Version ${new_version}"
 
 entry="* ${today} ${author} ${email} - v${new_version}-${new_release}"
 entry+="\n"
