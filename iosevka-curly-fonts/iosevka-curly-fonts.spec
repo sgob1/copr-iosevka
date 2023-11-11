@@ -3,7 +3,7 @@
 
 Name:           iosevka-curly
 Version:        27.3.4
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Slender typeface for code, from code (Monospace, Curly Style)
 
 License:        SIL Open Font License Version 1.1
@@ -86,6 +86,10 @@ npm run build -- ttf::iosevka-fixed-curly
 
 
 %changelog
+* Sat Nov 11 09:49:18 CET 2023 Marco Sgobino <marco.sgobino@gmail.com> - v27.3.4-2
+- Version 27.3.4
+- Removed clean section
+- Removed period in Summary
 * Sat Nov 04 14:08:39 CET 2023 Marco Sgobino <marco.sgobino@gmail.com> - v27.3.4-1
 - Version 27.3.4
 * Fri Nov 03 15:52:45 CET 2023 Marco Sgobino <marco.sgobino@gmail.com> - v27.3.3-4

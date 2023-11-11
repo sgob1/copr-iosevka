@@ -2,13 +2,18 @@
 
 author="Marco Sgobino"
 email="<marco.sgobino@gmail.com>"
-old_version=27.3.3
+old_version=27.3.4
 new_version=27.3.4
-old_release=4
-new_release=1
+old_release=1
+new_release=2
 
 today=$(LANG=C date "+%a %b %d %T %Z %Y")
+#content="- Version ${new_version}"
 content="- Version ${new_version}"
+content+="\n"
+content+="- Removed clean section"
+content+="\n"
+content+="- Removed period in Summary"
 
 entry="* ${today} ${author} ${email} - v${new_version}-${new_release}"
 entry+="\n"
