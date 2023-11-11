@@ -57,10 +57,6 @@ npm run build -- ttf::iosevka-term-ss07
 npm run build -- ttf::iosevka-fixed-ss07
 
 
-%clean
-%{__rm} -rf %{buildroot}
-
-
 %install
 %{__rm} -rf %{buildroot}
 

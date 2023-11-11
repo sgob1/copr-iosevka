@@ -40,10 +40,6 @@ npm install
 npm run build -- ttf::iosevka-etoile
 
 
-%clean
-%{__rm} -rf %{buildroot}
-
-
 %install
 %{__rm} -rf %{buildroot}
 

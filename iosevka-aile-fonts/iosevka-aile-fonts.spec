@@ -40,10 +40,6 @@ npm install
 npm run build -- ttf::iosevka-aile
 
 
-%clean
-%{__rm} -rf %{buildroot}
-
-
 %install
 %{__rm} -rf %{buildroot}
 

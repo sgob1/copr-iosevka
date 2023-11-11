@@ -56,10 +56,6 @@ npm run build -- ttf::iosevka-term-curly-slab
 npm run build -- ttf::iosevka-fixed-curly-slab
 
 
-%clean
-%{__rm} -rf %{buildroot}
-
-
 %install
 %{__rm} -rf %{buildroot}
 

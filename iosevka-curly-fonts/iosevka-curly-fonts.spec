@@ -58,10 +58,6 @@ npm run build -- ttf::iosevka-term-curly
 npm run build -- ttf::iosevka-fixed-curly
 
 
-%clean
-%{__rm} -rf %{buildroot}
-
-
 %install
 %{__rm} -rf %{buildroot}
 

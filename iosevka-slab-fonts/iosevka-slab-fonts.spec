@@ -58,10 +58,6 @@ npm run build -- ttf::iosevka-term-slab
 npm run build -- ttf::iosevka-fixed-slab
 
 
-%clean
-%{__rm} -rf %{buildroot}
-
-
 %install
 %{__rm} -rf %{buildroot}
 
