@@ -4,7 +4,7 @@
 Name:           iosevka-aile
 Version:        27.3.4
 Release:        1%{?dist}
-Summary:        Slender typeface for code, from code (Quasi-proportional, Sans-serif).
+Summary:        Slender typeface for code, from code (Quasi-proportional, Sans-serif)
 
 License:        SIL Open Font License Version 1.1
 URL:            https://github.com/be5invis/Iosevka
@@ -23,7 +23,7 @@ terminals, and preparing technical documents.
 
 
 %package -n iosevka-aile-fonts
-Summary:        Slender typeface for code, from code (Quasi-proportional, Sans-serif).
+Summary:        Slender typeface for code, from code (Quasi-proportional, Sans-serif)
 %description -n iosevka-aile-fonts
 Iosevka is an open-source, sans-serif + slab-serif, monospace +
 quasi‑proportional typeface family, designed for writing code, using in

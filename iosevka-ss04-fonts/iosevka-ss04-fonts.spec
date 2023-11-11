@@ -4,7 +4,7 @@
 Name:           iosevka-ss04
 Version:        27.3.4
 Release:        1%{?dist}
-Summary:        Slender typeface for code, from code (Monospace, Menlo Style).
+Summary:        Slender typeface for code, from code (Monospace, Menlo Style)
 
 License:        SIL Open Font License Version 1.1
 URL:            https://github.com/be5invis/Iosevka
@@ -23,7 +23,7 @@ terminals, and preparing technical documents.
 
 
 %package -n iosevka-ss04-fonts
-Summary:        Slender typeface for code, from code (Monospace, Menlo Style).
+Summary:        Slender typeface for code, from code (Monospace, Menlo Style)
 %description -n iosevka-ss04-fonts
 Iosevka is an open-source, sans-serif + slab-serif, monospace +
 quasi‑proportional typeface family, designed for writing code, using in
@@ -31,7 +31,7 @@ terminals, and preparing technical documents.
 
 
 %package -n iosevka-term-ss04-fonts
-Summary:        Slender typeface for code, from code (Monospace, Menlo Style).
+Summary:        Slender typeface for code, from code (Monospace, Menlo Style)
 %description -n iosevka-term-ss04-fonts
 Iosevka is an open-source, sans-serif + slab-serif, monospace +
 quasi‑proportional typeface family, designed for writing code, using in
@@ -39,7 +39,7 @@ terminals, and preparing technical documents.
 
 
 %package -n iosevka-fixed-ss04-fonts
-Summary:        Slender typeface for code, from code (Monospace, Menlo Style).
+Summary:        Slender typeface for code, from code (Monospace, Menlo Style)
 %description -n iosevka-fixed-ss04-fonts
 Iosevka is an open-source, sans-serif + slab-serif, monospace +
 quasi‑proportional typeface family, designed for writing code, using in

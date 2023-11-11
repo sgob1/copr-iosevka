@@ -4,7 +4,7 @@
 Name:           iosevka-curly
 Version:        27.3.4
 Release:        1%{?dist}
-Summary:        Slender typeface for code, from code (Monospace, Curly Style).
+Summary:        Slender typeface for code, from code (Monospace, Curly Style)
 
 License:        SIL Open Font License Version 1.1
 URL:            https://github.com/be5invis/Iosevka
@@ -23,7 +23,7 @@ terminals, and preparing technical documents.
 
 
 %package -n iosevka-curly-fonts
-Summary:        Slender typeface for code, from code (Monospace, Curly Style).
+Summary:        Slender typeface for code, from code (Monospace, Curly Style)
 %description -n iosevka-curly-fonts
 Iosevka is an open-source, sans-serif + slab-serif, monospace +
 quasi‑proportional typeface family, designed for writing code, using in
@@ -31,7 +31,7 @@ terminals, and preparing technical documents.
 
 
 %package -n iosevka-term-curly-fonts
-Summary:        Slender typeface for code, from code (Monospace, Curly Style).
+Summary:        Slender typeface for code, from code (Monospace, Curly Style)
 %description -n iosevka-term-curly-fonts
 Iosevka is an open-source, sans-serif + slab-serif, monospace +
 quasi‑proportional typeface family, designed for writing code, using in
@@ -39,7 +39,7 @@ terminals, and preparing technical documents.
 
 
 %package -n iosevka-fixed-curly-fonts
-Summary:        Slender typeface for code, from code (Monospace, Curly Style).
+Summary:        Slender typeface for code, from code (Monospace, Curly Style)
 %description -n iosevka-fixed-curly-fonts
 Iosevka is an open-source, sans-serif + slab-serif, monospace +
 quasi‑proportional typeface family, designed for writing code, using in

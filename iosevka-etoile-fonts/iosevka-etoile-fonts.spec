@@ -4,7 +4,7 @@
 Name:           iosevka-etoile
 Version:        27.3.4
 Release:        1%{?dist}
-Summary:        Slender typeface for code, from code (Quasi-proportional, Slab-serif).
+Summary:        Slender typeface for code, from code (Quasi-proportional, Slab-serif)
 
 License:        SIL Open Font License Version 1.1
 URL:            https://github.com/be5invis/Iosevka
@@ -23,7 +23,7 @@ terminals, and preparing technical documents.
 
 
 %package -n iosevka-etoile-fonts
-Summary:        Slender typeface for code, from code (Quasi-proportional, Slab-serif).
+Summary:        Slender typeface for code, from code (Quasi-proportional, Slab-serif)
 %description -n iosevka-etoile-fonts
 Iosevka is an open-source, sans-serif + slab-serif, monospace +
 quasi‑proportional typeface family, designed for writing code, using in
