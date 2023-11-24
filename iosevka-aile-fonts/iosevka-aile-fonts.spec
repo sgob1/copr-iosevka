@@ -1,17 +1,18 @@
 %global         source_name Iosevka
 %global         debug_package %{nil}
+%global         name_base iosevka-aile
 
-Name:           iosevka-aile
+Name:           iosevka-aile-fonts
 Version:        27.3.5
 Release:        1%{?dist}
 Summary:        Slender typeface for code, from code (Quasi-proportional, Sans-serif)
 
 License:        SIL Open Font License Version 1.1
 URL:            https://github.com/be5invis/Iosevka
-Source0:        %{url}/releases/download/v%{version}/super-ttc-sgr-%{name}-%{version}.zip
-Source10:      https://github.com/be5invis/Iosevka/raw/v%{version}/LICENSE.md
-Source11:      https://github.com/be5invis/Iosevka/raw/v%{version}/README.md
-Source12:      https://github.com/be5invis/Iosevka/raw/v%{version}/CHANGELOG.md
+Source0:        %{url}/releases/download/v%{version}/super-ttc-sgr-%{name_base}-%{version}.zip
+Source10:       %{url}/raw/v%{version}/LICENSE.md
+Source11:       %{url}/raw/v%{version}/README.md
+Source12:       %{url}/raw/v%{version}/CHANGELOG.md
 
 BuildArch:      noarch
 
@@ -19,14 +20,6 @@ BuildRequires:  unzip
 
 
 %description
-Iosevka is an open-source, sans-serif + slab-serif, monospace +
-quasi‑proportional typeface family, designed for writing code, using in
-terminals, and preparing technical documents.
-
-
-%package -n %{name}-fonts
-Summary:        Slender typeface for code, from code (Quasi-proportional, Sans-serif)
-%description -n %{name}-fonts
 Iosevka is an open-source, sans-serif + slab-serif, monospace +
 quasi‑proportional typeface family, designed for writing code, using in
 terminals, and preparing technical documents.
@@ -45,14 +38,13 @@ cp %{SOURCE10} %{SOURCE11} %{SOURCE12} .
 
 
 %install
-%{__install} -D -m 0644 sgr-%{name}.ttc %{buildroot}%{_datadir}/fonts/%{name}-fonts/%{name}.ttc
+%{__install} -D -m 0644 sgr-%{name_base}.ttc %{buildroot}%{_datadir}/fonts/%{name}/%{name_base}.ttc
 
 
-# Iosevka Aile - Quasi-proportional, Sans-serif
-%files -n %{name}-fonts
+%files
 %license LICENSE.md
 %doc README.md
-%{_datadir}/fonts/%{name}-fonts
+%{_datadir}/fonts/%{name}
 
 
 %changelog
