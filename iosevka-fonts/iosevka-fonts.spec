@@ -8,12 +8,16 @@ Summary:        Slender typeface for code, from code (Monospace, Default)
 
 License:        SIL Open Font License Version 1.1
 URL:            https://github.com/be5invis/Iosevka
-Source0:        %{url}/archive/refs/tags/v%{version}.tar.gz
+Source0:        %{url}/releases/download/v%{version}/super-ttc-sgr-%{name}-%{version}.zip
+Source1:        %{url}/releases/download/v%{version}/super-ttc-sgr-%{name}-term-%{version}.zip
+Source2:        %{url}/releases/download/v%{version}/super-ttc-sgr-%{name}-fixed-%{version}.zip
+Source10:      https://github.com/be5invis/Iosevka/raw/v%{version}/LICENSE.md
+Source11:      https://github.com/be5invis/Iosevka/raw/v%{version}/README.md
+Source12:      https://github.com/be5invis/Iosevka/raw/v%{version}/CHANGELOG.md
 
 BuildArch:      noarch
 
-BuildRequires:  nodejs-npm
-BuildRequires:  ttfautohint
+BuildRequires:  unzip
 
 
 %description
@@ -47,58 +51,41 @@ terminals, and preparing technical documents.
 
 
 %prep
-%autosetup -n %{source_name}-%{version}
+%autosetup -cT
+for s in %{_sourcedir}/super-ttc-sgr-%{name}-*.zip; do
+	unzip -qq $s '*.ttc'
+done
+cp %{SOURCE10} %{SOURCE11} %{SOURCE12} .
 
 
 %build
-npm install
-npm run build -- ttf::iosevka
-npm run build -- ttf::iosevka-term
-npm run build -- ttf::iosevka-fixed
+# Nothing here
 
 
 %install
-%{__rm} -rf %{buildroot}
-
-%{__install} -D -m 0644 %{_builddir}/%{source_name}-%{version}/dist/iosevka/ttf/*.ttf       -t %{buildroot}%{_datadir}/fonts/iosevka-fonts
-%{__install} -D -m 0644 %{_builddir}/%{source_name}-%{version}/dist/iosevka-term/ttf/*.ttf  -t %{buildroot}%{_datadir}/fonts/iosevka-term-fonts
-%{__install} -D -m 0644 %{_builddir}/%{source_name}-%{version}/dist/iosevka-fixed/ttf/*.ttf -t %{buildroot}%{_datadir}/fonts/iosevka-fixed-fonts
+%{__install} -D -m 0644 sgr-%{name}.ttc %{buildroot}%{_datadir}/fonts/%{name}/%{name}.ttc
+%{__install} -D -m 0644 sgr-%{name}-term.ttc %{buildroot}%{_datadir}/fonts/%{name}/%{name}-term.ttc
+%{__install} -D -m 0644 sgr-%{name}-fixed.ttc %{buildroot}%{_datadir}/fonts/%{name}/%{name}-fixed.ttc
 
 
 # Iosevka — Monospace, Default
 %files -n iosevka-fonts
 %license LICENSE.md
 %doc README.md
-%{_datadir}/fonts/iosevka-fonts
+%{_datadir}/fonts/%{name}/%{name}.ttc
 
 
 %files -n iosevka-term-fonts
 %license LICENSE.md
 %doc README.md
-%{_datadir}/fonts/iosevka-term-fonts
+%{_datadir}/fonts/%{name}/%{name}-term.ttc
 
 
 %files -n iosevka-fixed-fonts
 %license LICENSE.md
 %doc README.md
-%{_datadir}/fonts/iosevka-fixed-fonts
+%{_datadir}/fonts/%{name}/%{name}-fixed.ttc
 
 
 %changelog
-* Sat Nov 11 18:39:05 CET 2023 Marco Sgobino <marco.sgobino@gmail.com> - v27.3.5-1
-- Version 27.3.5
-* Sat Nov 11 09:49:18 CET 2023 Marco Sgobino <marco.sgobino@gmail.com> - v27.3.4-2
-- Version 27.3.4
-- Removed clean section
-- Removed period in Summary
-* Sat Nov 04 14:08:39 CET 2023 Marco Sgobino <marco.sgobino@gmail.com> - v27.3.4-1
-- Version 27.3.4
-* Fri Nov 03 15:52:45 CET 2023 Marco Sgobino <marco.sgobino@gmail.com> - v27.3.3-4
-- Fixed formatting of descriptions
-- Introduced new changelog format
-* Fri Nov 03 2023 Marco Sgobino <marco.sgobino@gmail.com> - 27.3.3
-- Fixed files specification
-* Fri Nov 03 2023 Marco Sgobino <marco.sgobino@gmail.com> - 27.3.3
-- Fixed description
-* Wed Nov 01 2023 Marco Sgobino <marco.sgobino@gmail.com> - 27.3.3
-- First version
+%autochangelog
