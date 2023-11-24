@@ -1,5 +1,7 @@
 %global         source_name Iosevka
 %global         debug_package %{nil}
+%global         name_term iosevka-term-curly
+%global         name_fixed iosevka-fixed-curly
 
 Name:           iosevka-curly
 Version:        27.3.5
@@ -9,8 +11,8 @@ Summary:        Slender typeface for code, from code (Monospace, Curly Style)
 License:        SIL Open Font License Version 1.1
 URL:            https://github.com/be5invis/Iosevka
 Source0:        %{url}/releases/download/v%{version}/super-ttc-sgr-%{name}-%{version}.zip
-Source1:        %{url}/releases/download/v%{version}/super-ttc-sgr-iosevka-term-curly-%{version}.zip
-Source2:        %{url}/releases/download/v%{version}/super-ttc-sgr-iosevka-fixed-curly-%{version}.zip
+Source1:        %{url}/releases/download/v%{version}/super-ttc-sgr-%{name_term}-%{version}.zip
+Source2:        %{url}/releases/download/v%{version}/super-ttc-sgr-%{name_fixed}-%{version}.zip
 Source10:      https://github.com/be5invis/Iosevka/raw/v%{version}/LICENSE.md
 Source11:      https://github.com/be5invis/Iosevka/raw/v%{version}/README.md
 Source12:      https://github.com/be5invis/Iosevka/raw/v%{version}/CHANGELOG.md
@@ -64,26 +66,26 @@ cp %{SOURCE10} %{SOURCE11} %{SOURCE12} .
 
 %install
 %{__install} -D -m 0644 sgr-%{name}.ttc %{buildroot}%{_datadir}/fonts/%{name}/%{name}.ttc
-%{__install} -D -m 0644 sgr-iosevka-term-curly.ttc %{buildroot}%{_datadir}/fonts/%{name}/%{name}-term.ttc
-%{__install} -D -m 0644 sgr-iosevka-fixed-curly.ttc %{buildroot}%{_datadir}/fonts/%{name}/%{name}-fixed.ttc
+%{__install} -D -m 0644 sgr-%{name_term}.ttc %{buildroot}%{_datadir}/fonts/%{name}/%{name_term}.ttc
+%{__install} -D -m 0644 sgr-%{name_fixed}.ttc %{buildroot}%{_datadir}/fonts/%{name}/%{name_fixed}.ttc
 
 # Iosevka Curly — Monospace, Curly Style
-%files -n iosevka-curly-fonts
+%files -n %{name}-fonts
 %license LICENSE.md
 %doc README.md
 %{_datadir}/fonts/%{name}/%{name}.ttc
 
 
-%files -n iosevka-term-curly-fonts
+%files -n %{name_term}-fonts
 %license LICENSE.md
 %doc README.md
-%{_datadir}/fonts/%{name}/%{name}-term.ttc
+%{_datadir}/fonts/%{name}/%{name_term}.ttc
 
 
-%files -n iosevka-fixed-curly-fonts
+%files -n %{name_fixed}-fonts
 %license LICENSE.md
 %doc README.md
-%{_datadir}/fonts/%{name}/%{name}-fixed.ttc
+%{_datadir}/fonts/%{name}/%{name_fixed}.ttc
 
 
 %changelog
