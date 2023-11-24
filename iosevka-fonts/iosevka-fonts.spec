@@ -71,19 +71,19 @@ cp %{SOURCE10} %{SOURCE11} %{SOURCE12} .
 
 
 # Iosevka — Monospace, Default
-%files -n iosevka-fonts
+%files -n %{name}-fonts
 %license LICENSE.md
 %doc README.md
 %{_datadir}/fonts/%{name}/%{name}.ttc
 
 
-%files -n iosevka-term-fonts
+%files -n %{name_term}-fonts
 %license LICENSE.md
 %doc README.md
 %{_datadir}/fonts/%{name}/%{name_term}.ttc
 
 
-%files -n iosevka-fixed-fonts
+%files -n %{name_fixed}-fonts
 %license LICENSE.md
 %doc README.md
 %{_datadir}/fonts/%{name}/%{name_fixed}.ttc
