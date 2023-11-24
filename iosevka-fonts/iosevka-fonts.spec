@@ -52,7 +52,7 @@ terminals, and preparing technical documents.
 
 %prep
 %autosetup -cT
-for s in %{_sourcedir}/super-ttc-sgr-%{name}-*.zip; do
+for s in %{_sourcedir}/*.zip; do
 	unzip -qq $s '*.ttc'
 done
 cp %{SOURCE10} %{SOURCE11} %{SOURCE12} .
