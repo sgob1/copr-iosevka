@@ -24,9 +24,9 @@ quasi‑proportional typeface family, designed for writing code, using in
 terminals, and preparing technical documents.
 
 
-%package -n iosevka-aile-fonts
+%package -n %{name}-fonts
 Summary:        Slender typeface for code, from code (Quasi-proportional, Sans-serif)
-%description -n iosevka-aile-fonts
+%description -n %{name}-fonts
 Iosevka is an open-source, sans-serif + slab-serif, monospace +
 quasi‑proportional typeface family, designed for writing code, using in
 terminals, and preparing technical documents.
@@ -45,14 +45,14 @@ cp %{SOURCE10} %{SOURCE11} %{SOURCE12} .
 
 
 %install
-%{__install} -D -m 0644 sgr-%{name}.ttc %{buildroot}%{_datadir}/fonts/%{name}/%{name}.ttc
+%{__install} -D -m 0644 sgr-%{name}.ttc %{buildroot}%{_datadir}/fonts/%{name}-fonts/%{name}.ttc
 
 
 # Iosevka Aile - Quasi-proportional, Sans-serif
-%files -n iosevka-aile-fonts
+%files -n %{name}-fonts
 %license LICENSE.md
 %doc README.md
-%{_datadir}/fonts/%{name}/%{name}.ttc
+%{_datadir}/fonts/%{name}-fonts
 
 
 %changelog
