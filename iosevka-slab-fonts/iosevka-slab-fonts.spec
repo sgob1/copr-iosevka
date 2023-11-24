@@ -8,12 +8,16 @@ Summary:        Slender typeface for code, from code (Monospace, Slab-serif)
 
 License:        SIL Open Font License Version 1.1
 URL:            https://github.com/be5invis/Iosevka
-Source0:        %{url}/archive/refs/tags/v%{version}.tar.gz
+Source0:        %{url}/releases/download/v%{version}/super-ttc-sgr-%{name}-%{version}.zip
+Source1:        %{url}/releases/download/v%{version}/super-ttc-sgr-iosevka-term-slab-%{version}.zip
+Source2:        %{url}/releases/download/v%{version}/super-ttc-sgr-iosevka-fixed-slab-%{version}.zip
+Source10:      https://github.com/be5invis/Iosevka/raw/v%{version}/LICENSE.md
+Source11:      https://github.com/be5invis/Iosevka/raw/v%{version}/README.md
+Source12:      https://github.com/be5invis/Iosevka/raw/v%{version}/CHANGELOG.md
 
 BuildArch:      noarch
 
-BuildRequires:  nodejs-npm
-BuildRequires:  ttfautohint
+BuildRequires:  unzip
 
 
 %description
@@ -47,59 +51,40 @@ terminals, and preparing technical documents.
 
 
 %prep
-%autosetup -n %{source_name}-%{version}
+%autosetup -cT
+for s in %{_sourcedir}/*.zip; do
+	unzip -qq $s '*.ttc'
+done
+cp %{SOURCE10} %{SOURCE11} %{SOURCE12} .
 
 
 %build
-npm install
-
-npm run build -- ttf::iosevka-slab
-npm run build -- ttf::iosevka-term-slab
-npm run build -- ttf::iosevka-fixed-slab
+# Nothing here
 
 
 %install
-%{__rm} -rf %{buildroot}
-
-%{__install} -D -m 0644 %{_builddir}/%{source_name}-%{version}/dist/iosevka-slab/ttf/*.ttf       -t %{buildroot}%{_datadir}/fonts/iosevka-slab-fonts
-%{__install} -D -m 0644 %{_builddir}/%{source_name}-%{version}/dist/iosevka-term-slab/ttf/*.ttf  -t %{buildroot}%{_datadir}/fonts/iosevka-term-slab-fonts
-%{__install} -D -m 0644 %{_builddir}/%{source_name}-%{version}/dist/iosevka-fixed-slab/ttf/*.ttf -t %{buildroot}%{_datadir}/fonts/iosevka-fixed-slab-fonts
-
+%{__install} -D -m 0644 sgr-%{name}.ttc %{buildroot}%{_datadir}/fonts/%{name}/%{name}.ttc
+%{__install} -D -m 0644 sgr-iosevka-term-slab.ttc %{buildroot}%{_datadir}/fonts/%{name}/%{name}-term.ttc
+%{__install} -D -m 0644 sgr-iosevka-fixed-slab.ttc %{buildroot}%{_datadir}/fonts/%{name}/%{name}-fixed.ttc
 
 # Iosevka Slab — Monospace, Slab-serif
 %files -n iosevka-slab-fonts
 %license LICENSE.md
 %doc README.md
-%{_datadir}/fonts/iosevka-slab-fonts
+%{_datadir}/fonts/%{name}/%{name}.ttc
 
 
 %files -n iosevka-term-slab-fonts
 %license LICENSE.md
 %doc README.md
-%{_datadir}/fonts/iosevka-term-slab-fonts
+%{_datadir}/fonts/%{name}/%{name}-term.ttc
 
 
 %files -n iosevka-fixed-slab-fonts
 %license LICENSE.md
 %doc README.md
-%{_datadir}/fonts/iosevka-fixed-slab-fonts
+%{_datadir}/fonts/%{name}/%{name}-fixed.ttc
 
 
 %changelog
-* Sat Nov 11 18:39:05 CET 2023 Marco Sgobino <marco.sgobino@gmail.com> - v27.3.5-1
-- Version 27.3.5
-* Sat Nov 11 09:49:18 CET 2023 Marco Sgobino <marco.sgobino@gmail.com> - v27.3.4-2
-- Version 27.3.4
-- Removed clean section
-- Removed period in Summary
-* Sat Nov 04 14:08:39 CET 2023 Marco Sgobino <marco.sgobino@gmail.com> - v27.3.4-1
-- Version 27.3.4
-* Fri Nov 03 15:52:45 CET 2023 Marco Sgobino <marco.sgobino@gmail.com> - v27.3.3-4
-- Fixed formatting of descriptions
-- Introduced new changelog format
-* Fri Nov 03 2023 Marco Sgobino <marco.sgobino@gmail.com> - 27.3.3
-- Fixed files specification
-* Fri Nov 03 2023 Marco Sgobino <marco.sgobino@gmail.com> - 27.3.3
-- Fixed description
-* Wed Nov 01 2023 Marco Sgobino <marco.sgobino@gmail.com> - 27.3.3
-- First version
+%autochangelog
