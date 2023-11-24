@@ -8,12 +8,16 @@ Summary:        Slender typeface for code, from code (Monospace, Curly Style, Sl
 
 License:        SIL Open Font License Version 1.1
 URL:            https://github.com/be5invis/Iosevka
-Source0:        %{url}/archive/refs/tags/v%{version}.tar.gz
+Source0:        %{url}/releases/download/v%{version}/super-ttc-sgr-%{name}-%{version}.zip
+Source1:        %{url}/releases/download/v%{version}/super-ttc-sgr-iosevka-term-curly-slab-%{version}.zip
+Source2:        %{url}/releases/download/v%{version}/super-ttc-sgr-iosevka-fixed-curly-slab-%{version}.zip
+Source10:      https://github.com/be5invis/Iosevka/raw/v%{version}/LICENSE.md
+Source11:      https://github.com/be5invis/Iosevka/raw/v%{version}/README.md
+Source12:      https://github.com/be5invis/Iosevka/raw/v%{version}/CHANGELOG.md
 
 BuildArch:      noarch
 
-BuildRequires:  nodejs-npm
-BuildRequires:  ttfautohint
+BuildRequires:  unzip
 
 
 %description
@@ -45,42 +49,39 @@ Iosevka is an open-source, sans-serif + slab-serif, monospace + quasi‑proporti
 
 
 %prep
-%autosetup -n %{source_name}-%{version}
+%autosetup -cT
+for s in %{_sourcedir}/*.zip; do
+	unzip -qq $s '*.ttc'
+done
+cp %{SOURCE10} %{SOURCE11} %{SOURCE12} .
 
 
 %build
-npm install
-
-npm run build -- ttf::iosevka-curly-slab
-npm run build -- ttf::iosevka-term-curly-slab
-npm run build -- ttf::iosevka-fixed-curly-slab
+# Nothing here
 
 
 %install
-%{__rm} -rf %{buildroot}
-
-%{__install} -D -m 0644 %{_builddir}/%{source_name}-%{version}/dist/iosevka-curly-slab/ttf/*.ttf       -t %{buildroot}%{_datadir}/fonts/iosevka-curly-slab-fonts
-%{__install} -D -m 0644 %{_builddir}/%{source_name}-%{version}/dist/iosevka-term-curly-slab/ttf/*.ttf  -t %{buildroot}%{_datadir}/fonts/iosevka-term-curly-slab-fonts
-%{__install} -D -m 0644 %{_builddir}/%{source_name}-%{version}/dist/iosevka-fixed-curly-slab/ttf/*.ttf -t %{buildroot}%{_datadir}/fonts/iosevka-fixed-curly-slab-fonts
-
+%{__install} -D -m 0644 sgr-%{name}.ttc %{buildroot}%{_datadir}/fonts/%{name}/%{name}.ttc
+%{__install} -D -m 0644 sgr-iosevka-term-curly-slab.ttc %{buildroot}%{_datadir}/fonts/%{name}/%{name}-term.ttc
+%{__install} -D -m 0644 sgr-iosevka-fixed-curly-slab.ttc %{buildroot}%{_datadir}/fonts/%{name}/%{name}-fixed.ttc
 
 # Iosevka Curly Slab — Monospace, Curly Style, Slab-serif
 %files -n iosevka-curly-slab-fonts
 %license LICENSE.md
 %doc README.md
-%{_datadir}/fonts/iosevka-curly-slab-fonts
+%{_datadir}/fonts/%{name}/%{name}.ttc
 
 
 %files -n iosevka-term-curly-slab-fonts
 %license LICENSE.md
 %doc README.md
-%{_datadir}/fonts/iosevka-term-curly-slab-fonts
+%{_datadir}/fonts/%{name}/%{name}-term.ttc
 
 
 %files -n iosevka-fixed-curly-slab-fonts
 %license LICENSE.md
 %doc README.md
-%{_datadir}/fonts/iosevka-fixed-curly-slab-fonts
+%{_datadir}/fonts/%{name}/%{name}-fixed.ttc
 
 
 %changelog
