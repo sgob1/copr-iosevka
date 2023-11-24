@@ -8,7 +8,6 @@ Summary:        Slender typeface for code, from code (Quasi-proportional, Slab-s
 
 License:        SIL Open Font License Version 1.1
 URL:            https://github.com/be5invis/Iosevka
-Source0:        %{url}/archive/refs/tags/v%{version}.tar.gz
 Source0:        %{url}/releases/download/v%{version}/super-ttc-sgr-%{name}-%{version}.zip
 Source10:      https://github.com/be5invis/Iosevka/raw/v%{version}/LICENSE.md
 Source11:      https://github.com/be5invis/Iosevka/raw/v%{version}/README.md
