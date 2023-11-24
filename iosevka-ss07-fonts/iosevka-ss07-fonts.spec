@@ -48,7 +48,7 @@ cp %{SOURCE10} %{SOURCE11} %{SOURCE12} .
 
 %files
 %license LICENSE.md
-%doc README.md
+%doc {README,CHANGELOG}.md
 %{_datadir}/fonts/%{name}
 
 
