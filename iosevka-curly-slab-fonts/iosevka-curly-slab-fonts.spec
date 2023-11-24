@@ -85,20 +85,4 @@ cp %{SOURCE10} %{SOURCE11} %{SOURCE12} .
 
 
 %changelog
-* Sat Nov 11 18:39:05 CET 2023 Marco Sgobino <marco.sgobino@gmail.com> - v27.3.5-1
-- Version 27.3.5
-* Sat Nov 11 09:49:18 CET 2023 Marco Sgobino <marco.sgobino@gmail.com> - v27.3.4-2
-- Version 27.3.4
-- Removed clean section
-- Removed period in Summary
-* Sat Nov 04 14:08:39 CET 2023 Marco Sgobino <marco.sgobino@gmail.com> - v27.3.4-1
-- Version 27.3.4
-* Fri Nov 03 15:52:45 CET 2023 Marco Sgobino <marco.sgobino@gmail.com> - v27.3.3-4
-- Fixed formatting of descriptions
-- Introduced new changelog format
-* Fri Nov 03 2023 Marco Sgobino <marco.sgobino@gmail.com> - 27.3.3
-- Fixed files specification
-* Fri Nov 03 2023 Marco Sgobino <marco.sgobino@gmail.com> - 27.3.3
-- Fixed description
-* Wed Nov 01 2023 Marco Sgobino <marco.sgobino@gmail.com> - 27.3.3
-- First version
+%autochangelog
