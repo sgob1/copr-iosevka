@@ -8,12 +8,14 @@ Summary:        Slender typeface for code, from code (Quasi-proportional, Sans-s
 
 License:        SIL Open Font License Version 1.1
 URL:            https://github.com/be5invis/Iosevka
-Source0:        %{url}/archive/refs/tags/v%{version}.tar.gz
+Source0:        %{url}/releases/download/v%{version}/super-ttc-sgr-%{name}-%{version}.zip
+Source10:      https://github.com/be5invis/Iosevka/raw/v%{version}/LICENSE.md
+Source11:      https://github.com/be5invis/Iosevka/raw/v%{version}/README.md
+Source12:      https://github.com/be5invis/Iosevka/raw/v%{version}/CHANGELOG.md
 
 BuildArch:      noarch
 
-BuildRequires:  nodejs-npm
-BuildRequires:  ttfautohint
+BuildRequires:  unzip
 
 
 %description
@@ -31,26 +33,26 @@ terminals, and preparing technical documents.
 
 
 %prep
-%autosetup -n %{source_name}-%{version}
+%autosetup -cT
+for s in %{_sourcedir}/super-ttc-sgr-%{name}-*.zip; do
+	unzip -qq $s '*.ttc'
+done
+cp %{SOURCE10} %{SOURCE11} %{SOURCE12} .
 
 
 %build
-npm install
-
-npm run build -- ttf::iosevka-aile
+# Nothing here
 
 
 %install
-%{__rm} -rf %{buildroot}
-
-%{__install} -D -m 0644 %{_builddir}/%{source_name}-%{version}/dist/iosevka-aile/ttf/*.ttf -t %{buildroot}%{_datadir}/fonts/iosevka-aile-fonts
+%{__install} -D -m 0644 sgr-%{name}.ttc %{buildroot}%{_datadir}/fonts/%{name}/%{name}.ttc
 
 
 # Iosevka Aile - Quasi-proportional, Sans-serif
 %files -n iosevka-aile-fonts
 %license LICENSE.md
 %doc README.md
-%{_datadir}/fonts/iosevka-aile-fonts
+%{_datadir}/fonts/%{name}/%{name}.ttc
 
 
 %changelog
