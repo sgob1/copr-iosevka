@@ -5,7 +5,7 @@
 %global         name_fixed IosevkaFixed
 
 Name:           iosevka-fonts
-Version:        28.0.0
+Version:        28.0.1
 Release:        1%{?dist}
 Summary:        Slender typeface for code, from code (Monospace, Default)
 
