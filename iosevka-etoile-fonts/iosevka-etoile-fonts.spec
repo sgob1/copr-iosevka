@@ -1,15 +1,15 @@
 %global         source_name Iosevka
 %global         debug_package %{nil}
-%global         name_base iosevka-etoile
+%global         name_base IosevkaEtoile
 
 Name:           iosevka-etoile-fonts
-Version:        27.3.5
+Version:        28.0.2
 Release:        1%{?dist}
 Summary:        Slender typeface for code, from code (Quasi-proportional, Slab-serif)
 
 License:        SIL Open Font License Version 1.1
 URL:            https://github.com/be5invis/Iosevka
-Source0:        %{url}/releases/download/v%{version}/super-ttc-sgr-%{name_base}-%{version}.zip
+Source0:        %{url}/releases/download/v%{version}/SuperTTC-%{name_base}-%{version}.zip
 Source10:       %{url}/raw/v%{version}/LICENSE.md
 Source11:       %{url}/raw/v%{version}/README.md
 Source12:       %{url}/raw/v%{version}/CHANGELOG.md
@@ -38,7 +38,7 @@ cp %{SOURCE10} %{SOURCE11} %{SOURCE12} .
 
 
 %install
-%{__install} -D -m 0644 sgr-%{name_base}.ttc %{buildroot}%{_datadir}/fonts/%{name}/%{name_base}.ttc
+%{__install} -D -m 0644 %{name_base}.ttc %{buildroot}%{_datadir}/fonts/%{name}/%{name_base}.ttc
 
 
 %files
