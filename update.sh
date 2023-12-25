@@ -2,8 +2,8 @@
 
 author="Marco Sgobino"
 email="<marco.sgobino@gmail.com>"
-old_version=27.3.4
-new_version=27.3.5
+old_version=27.3.5
+new_version=28.0.1
 old_release=2
 new_release=1
 
@@ -21,4 +21,5 @@ entry+="${content}"
 find . -type f -name '*.spec' -exec sed -i          \
     -e "/Version:/s/${old_version}/${new_version}/" \
     -e "/Release:/s/${old_release}/${new_release}/" \
-    -e "/%changelog/a ${entry}" {} \;
+    {} \;
+    #-e "/%changelog/a ${entry}" {} \;

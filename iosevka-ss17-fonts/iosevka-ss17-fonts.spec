@@ -1,19 +1,19 @@
 %global         source_name Iosevka
 %global         debug_package %{nil}
-%global         name_base iosevka-ss17
-%global         name_term iosevka-term-ss17
-%global         name_fixed iosevka-fixed-ss17
+%global         name_base IosevkaSS17
+%global         name_term IosevkaTermSS17
+%global         name_fixed IosevkaFixedSS17
 
 Name:           iosevka-ss17-fonts
-Version:        27.3.5
+Version:        28.0.1
 Release:        1%{?dist}
 Summary:        Slender typeface for code, from code (Monospace, Recursive Mono Style)
 
 License:        SIL Open Font License Version 1.1
 URL:            https://github.com/be5invis/Iosevka
-Source0:        %{url}/releases/download/v%{version}/super-ttc-sgr-%{name_base}-%{version}.zip
-Source1:        %{url}/releases/download/v%{version}/super-ttc-sgr-%{name_term}-%{version}.zip
-Source2:        %{url}/releases/download/v%{version}/super-ttc-sgr-%{name_fixed}-%{version}.zip
+Source0:        %{url}/releases/download/v%{version}/SuperTTC-SGr-%{name_base}-%{version}.zip
+Source1:        %{url}/releases/download/v%{version}/SuperTTC-SGr-%{name_term}-%{version}.zip
+Source2:        %{url}/releases/download/v%{version}/SuperTTC-SGr-%{name_fixed}-%{version}.zip
 Source10:       %{url}/raw/v%{version}/LICENSE.md
 Source11:       %{url}/raw/v%{version}/README.md
 Source12:       %{url}/raw/v%{version}/CHANGELOG.md
@@ -41,9 +41,9 @@ cp %{SOURCE10} %{SOURCE11} %{SOURCE12} .
 
 
 %install
-%{__install} -D -m 0644 sgr-%{name_base}.ttc %{buildroot}%{_datadir}/fonts/%{name}/%{name_base}.ttc
-%{__install} -D -m 0644 sgr-%{name_term}.ttc %{buildroot}%{_datadir}/fonts/%{name}/%{name_term}.ttc
-%{__install} -D -m 0644 sgr-%{name_fixed}.ttc %{buildroot}%{_datadir}/fonts/%{name}/%{name_fixed}.ttc
+%{__install} -D -m 0644 SGr-%{name_base}.ttc %{buildroot}%{_datadir}/fonts/%{name}/%{name_base}.ttc
+%{__install} -D -m 0644 SGr-%{name_term}.ttc %{buildroot}%{_datadir}/fonts/%{name}/%{name_term}.ttc
+%{__install} -D -m 0644 SGr-%{name_fixed}.ttc %{buildroot}%{_datadir}/fonts/%{name}/%{name_fixed}.ttc
 
 
 %files
