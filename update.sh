@@ -2,9 +2,9 @@
 
 author="Marco Sgobino"
 email="<marco.sgobino@gmail.com>"
-old_version=27.3.5
-new_version=28.0.1
-old_release=2
+old_version=28.0.1
+new_version=28.0.2
+old_release=1
 new_release=1
 
 today=$(LANG=C date "+%a %b %d %T %Z %Y")
