@@ -2,8 +2,8 @@
 
 author="Marco Sgobino"
 email="<marco.sgobino@gmail.com>"
-old_version=28.0.1
-new_version=28.0.2
+old_version=28.0.2
+new_version=28.0.3
 old_release=1
 new_release=1
 
