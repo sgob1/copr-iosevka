@@ -5,7 +5,7 @@
 %global         name_fixed IosevkaFixedSS09
 
 Name:           iosevka-ss09-fonts
-Version:        28.0.4
+Version:        28.0.5
 Release:        1%{?dist}
 Summary:        Slender typeface for code, from code (Monospace, Source Code Pro Style)
 

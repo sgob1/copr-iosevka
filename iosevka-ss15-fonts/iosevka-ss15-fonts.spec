@@ -5,7 +5,7 @@
 %global         name_fixed IosevkaFixedSS15
 
 Name:           iosevka-ss15-fonts
-Version:        28.0.4
+Version:        28.0.5
 Release:        1%{?dist}
 Summary:        Slender typeface for code, from code (Monospace, IBM Plex Mono Style)
 

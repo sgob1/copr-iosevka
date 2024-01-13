@@ -5,7 +5,7 @@
 %global         name_fixed IosevkaFixedSS08
 
 Name:           iosevka-ss08-fonts
-Version:        28.0.4
+Version:        28.0.5
 Release:        1%{?dist}
 Summary:        Slender typeface for code, from code (Monospace, Pragmata Pro Style)
 
