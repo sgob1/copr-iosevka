@@ -5,7 +5,7 @@
 %global         name_fixed IosevkaFixedSS01
 
 Name:           iosevka-ss01-fonts
-Version:        28.0.7
+Version:        28.1.0
 Release:        1%{?dist}
 Summary:        Slender typeface for code, from code (Monospace, Andale Mono Style)
 
