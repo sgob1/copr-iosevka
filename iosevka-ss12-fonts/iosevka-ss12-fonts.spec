@@ -5,7 +5,7 @@
 %global         name_fixed IosevkaFixedSS12
 
 Name:           iosevka-ss12-fonts
-Version:        29.1.0
+Version:        29.2.0
 Release:        1%{?dist}
 Summary:        Slender typeface for code, from code (Monospace, Ubuntu Mono Style)
 
