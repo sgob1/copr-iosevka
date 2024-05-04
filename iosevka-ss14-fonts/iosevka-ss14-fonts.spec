@@ -5,7 +5,7 @@
 %global         name_fixed IosevkaFixedSS14
 
 Name:           iosevka-ss14-fonts
-Version:        29.2.1
+Version:        30.0.0
 Release:        1%{?dist}
 Summary:        Slender typeface for code, from code (Monospace, JetBrains Mono Style)
 
