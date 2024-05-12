@@ -5,7 +5,7 @@
 %global         name_fixed IosevkaFixedCurly
 
 Name:           iosevka-curly-fonts
-Version:        30.0.0
+Version:        30.0.1
 Release:        1%{?dist}
 Summary:        Slender typeface for code, from code (Monospace, Curly Style)
 
