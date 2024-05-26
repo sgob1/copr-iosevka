@@ -5,7 +5,7 @@
 %global         name_fixed IosevkaFixedSS07
 
 Name:           iosevka-ss07-fonts
-Version:        30.0.1
+Version:        30.1.0
 Release:        1%{?dist}
 Summary:        Slender typeface for code, from code (Monospace, Monaco Style)
 
