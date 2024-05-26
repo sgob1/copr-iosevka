@@ -5,7 +5,7 @@
 %global         name_fixed IosevkaFixedSS18
 
 Name:           iosevka-ss18-fonts
-Version:        30.1.0
+Version:        30.1.1
 Release:        1%{?dist}
 Summary:        Slender typeface for code, from code (Monospace, Input Mono Style)
 
