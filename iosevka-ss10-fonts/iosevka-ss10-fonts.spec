@@ -5,7 +5,7 @@
 %global         name_fixed IosevkaFixedSS10
 
 Name:           iosevka-ss10-fonts
-Version:        30.3.1
+Version:        30.3.2
 Release:        1%{?dist}
 Summary:        Slender typeface for code, from code (Monospace, Envy Code R Style)
 
