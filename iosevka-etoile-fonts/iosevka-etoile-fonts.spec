@@ -3,7 +3,7 @@
 %global         name_base IosevkaEtoile
 
 Name:           iosevka-etoile-fonts
-Version:        30.3.3
+Version:        31.0.0
 Release:        1%{?dist}
 Summary:        Slender typeface for code, from code (Quasi-proportional, Slab-serif)
 

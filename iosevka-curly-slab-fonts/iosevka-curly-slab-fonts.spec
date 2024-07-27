@@ -5,7 +5,7 @@
 %global         name_fixed IosevkaFixedCurlySlab
 
 Name:           iosevka-curly-slab-fonts
-Version:        30.3.3
+Version:        31.0.0
 Release:        1%{?dist}
 Summary:        Slender typeface for code, from code (Monospace, Curly Style, Slab-serif)
 
