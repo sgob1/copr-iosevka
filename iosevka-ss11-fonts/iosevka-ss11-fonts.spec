@@ -5,7 +5,7 @@
 %global         name_fixed IosevkaFixedSS11
 
 Name:           iosevka-ss11-fonts
-Version:        31.0.0
+Version:        31.1.0
 Release:        1%{?dist}
 Summary:        Slender typeface for code, from code (Monospace, X Window Fixed Style)
 

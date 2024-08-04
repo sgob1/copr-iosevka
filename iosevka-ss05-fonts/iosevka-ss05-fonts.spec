@@ -5,7 +5,7 @@
 %global         name_fixed IosevkaFixedSS05
 
 Name:           iosevka-ss05-fonts
-Version:        31.0.0
+Version:        31.1.0
 Release:        1%{?dist}
 Summary:        Slender typeface for code, from code (Monospace, Fira Mono Style)
 
