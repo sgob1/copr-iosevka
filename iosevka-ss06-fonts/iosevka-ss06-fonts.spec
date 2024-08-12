@@ -5,7 +5,7 @@
 %global         name_fixed IosevkaFixedSS06
 
 Name:           iosevka-ss06-fonts
-Version:        31.1.0
+Version:        31.2.0
 Release:        1%{?dist}
 Summary:        Slender typeface for code, from code (Monospace, Liberation Mono Style)
 
