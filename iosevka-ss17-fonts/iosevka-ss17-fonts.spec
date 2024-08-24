@@ -5,7 +5,7 @@
 %global         name_fixed IosevkaFixedSS17
 
 Name:           iosevka-ss17-fonts
-Version:        31.2.0
+Version:        31.3.0
 Release:        1%{?dist}
 Summary:        Slender typeface for code, from code (Monospace, Recursive Mono Style)
 
