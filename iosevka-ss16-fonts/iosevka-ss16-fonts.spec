@@ -5,7 +5,7 @@
 %global         name_fixed IosevkaFixedSS16
 
 Name:           iosevka-ss16-fonts
-Version:        31.3.0
+Version:        31.4.0
 Release:        1%{?dist}
 Summary:        Slender typeface for code, from code (Monospace, PT Mono Style)
 
