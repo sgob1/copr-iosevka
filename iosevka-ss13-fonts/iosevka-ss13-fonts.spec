@@ -5,7 +5,7 @@
 %global         name_fixed IosevkaFixedSS13
 
 Name:           iosevka-ss13-fonts
-Version:        31.4.0
+Version:        31.5.0
 Release:        1%{?dist}
 Summary:        Slender typeface for code, from code (Monospace, Lucida Style)
 
