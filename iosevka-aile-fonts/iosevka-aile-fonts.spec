@@ -3,7 +3,7 @@
 %global         name_base IosevkaAile
 
 Name:           iosevka-aile-fonts
-Version:        31.5.0
+Version:        31.6.0
 Release:        1%{?dist}
 Summary:        Slender typeface for code, from code (Quasi-proportional, Sans-serif)
 
