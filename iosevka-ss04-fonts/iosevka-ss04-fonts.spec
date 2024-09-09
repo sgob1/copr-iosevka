@@ -5,7 +5,7 @@
 %global         name_fixed IosevkaFixedSS04
 
 Name:           iosevka-ss04-fonts
-Version:        31.6.0
+Version:        31.6.1
 Release:        1%{?dist}
 Summary:        Slender typeface for code, from code (Monospace, Menlo Style)
 
