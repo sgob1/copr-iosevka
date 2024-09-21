@@ -5,7 +5,7 @@
 %global         name_fixed IosevkaFixedSS03
 
 Name:           iosevka-ss03-fonts
-Version:        31.6.1
+Version:        31.7.0
 Release:        1%{?dist}
 Summary:        Slender typeface for code, from code (Monospace, Consolas Style)
 
