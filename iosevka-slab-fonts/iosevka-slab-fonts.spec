@@ -5,7 +5,7 @@
 %global         name_fixed IosevkaFixedSlab
 
 Name:           iosevka-slab-fonts
-Version:        31.7.0
+Version:        31.7.1
 Release:        1%{?dist}
 Summary:        Slender typeface for code, from code (Monospace, Slab-serif)
 
